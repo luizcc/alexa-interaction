@@ -1,0 +1,138 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "pare"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "sim"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "não"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Strings",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "String",
+          "samples": [
+            " {Strings}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Selections",
+              "type": "Selections"
+            }
+          ],
+          "name": "Select",
+          "samples": [
+            "{Selections}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Numbers",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "Number",
+          "samples": [
+            "{Numbers}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Durations",
+              "type": "AMAZON.DURATION"
+            }
+          ],
+          "name": "Duration",
+          "samples": [
+            "{Durations}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Dates",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "Times",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "name": "Date",
+          "samples": [
+            "{Dates} às {Times}",
+            "às {Times}",
+            "{Dates}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "Amazon",
+                  "Amazon Video"
+                ],
+                "value": "Amazon Prime"
+              }
+            },
+            {
+              "name": {
+                "value": "Hulu"
+              }
+            },
+            {
+              "name": {
+                "value": "YouTube"
+              }
+            },
+            {
+              "name": {
+                "value": "Netflix"
+              }
+            }
+          ],
+          "name": "Selections"
+        }
+      ],
+      "invocationName": "ações personalizadas"
+    }
+  }
+}
